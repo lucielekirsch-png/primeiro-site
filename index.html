@@ -14,10 +14,19 @@
    </header>
    <main>
     <h2>Meu primeiro post</h2>
-    <p>Por: SEU NOME</p>
-    <p>Boas vindas ao meu Blog, aqui vou
-        compartilhar dicas com você!
+    <p>Por: Luciele</p>
+    <p> Boas vindas ao meu Blog, aqui vou compartilhar
+        dicas com você!
     </p>
-   </main>
-</body>
-</html>
+    <button>❤️ <span>0</span></button>
+    </main>
+    </body>
+    <script>
+     const botao = document.querySelector("button");
+     botao.addEventListener("click", botaoClicado);
+     function botaoClicado(){
+        let texto = botao.querySelector("span");
+        texto.textContent++;
+     }
+     </script>
+     </html>
